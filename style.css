@@ -1,0 +1,41 @@
+:root {
+    --dark: #24221f;
+    --light: #f6f3ee;
+    --paper: #fffdf9;
+    --muted: #716d67;
+    --line: #ded8cf;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--dark); background: var(--paper); font-family: Arial, Helvetica, sans-serif; }
+.navbar-brand { letter-spacing: .5px; }
+.nav-link { margin-left: 15px; }
+.hero {
+    min-height: 100vh; display: flex; align-items: center; color: white;
+    background: linear-gradient(rgba(36,34,31,.58), rgba(36,34,31,.58)),
+    url("https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1800&q=80") center/cover;
+}
+.hero-content { max-width: 700px; padding-top: 50px; }
+.small-title, .section-label { font-size: .8rem; letter-spacing: 2px; font-weight: 700; }
+.hero h1 { font-size: clamp(2.6rem, 6vw, 5rem); line-height: 1; margin: 18px 0; }
+.hero .lead { max-width: 620px; color: #f0ece7; }
+.section-padding { padding: 100px 0; }
+.section-label { color: #82776c; margin-bottom: 15px; }
+h2 { font-size: clamp(2rem, 4vw, 3.3rem); margin-bottom: 20px; }
+.services-section { background: var(--light); }
+.service-card { height: 100%; padding: 35px; background: var(--paper); border: 1px solid var(--line); transition: transform .2s ease; }
+.service-card:hover { transform: translateY(-5px); }
+.service-number { font-size: .85rem; font-weight: bold; color: #8a7b6d; margin-bottom: 35px; }
+.service-card h3 { font-size: 1.4rem; margin-bottom: 15px; }
+.service-card p, .why-section p, .contact-section p { color: var(--muted); line-height: 1.7; }
+.why-section { background: #ebe5dc; }
+.why-section h3 { font-size: 2rem; }
+.why-section h4 { margin: 10px 0; }
+.contact-section { background: var(--paper); }
+.contact-info { margin-top: 35px; }
+.contact-info p { margin-bottom: 10px; }
+.form-control { border: 1px solid var(--line); border-radius: 0; padding: 12px; background: white; }
+.form-control:focus { box-shadow: none; border-color: var(--dark); }
+.btn-dark { border-radius: 0; }
+footer { padding: 25px 0; background: var(--dark); color: white; font-size: .9rem; }
+@media (max-width: 991px) { .nav-link { margin-left: 0; } .hero { min-height: 90vh; } }
